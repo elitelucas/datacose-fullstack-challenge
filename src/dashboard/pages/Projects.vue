@@ -82,23 +82,23 @@ export default {
     }
   },
   head: {
-    title: "Recent Projects 💻 - Asaolu Elijah",
+    title: "Recent Projects 💻 - Lucas Wang",
     meta: [
       {
         hid: "description",
         name: "description",
         content:
-          "View all the recents open-sourced projects built with ♥ by Asaolu Elijah, open-sourced means this project source code are publicly available for everyone to use or modify."
+          "View all the recents open-sourced projects built with ♥ by Lucas Wang, open-sourced means this project source code are publicly available for everyone to use or modify."
       },
       {
         hid: "og:title",
         name: "og:title",
-        content: "Recent Projects 💻 - Asaolu Elijah"
+        content: "Recent Projects 💻 - Lucas Wang"
       },
       {
         property: "og:description",
         content:
-          "View all the recents open-sourced projects built with ♥ by Asaolu Elijah, open-sourced means this project source code are publicly available for everyone to use or modify."
+          "View all the recents open-sourced projects built with ♥ by Lucas Wang, open-sourced means this project source code are publicly available for everyone to use or modify."
       },
       {
         hid: "og:image",

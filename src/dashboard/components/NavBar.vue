@@ -1,8 +1,5 @@
 <template>
   <b-navbar toggleable="lg" fixed="top" type="light" variant="light">
-    <b-navbar-brand tag="h1" to="/" style="font-weight: bolder;"
-      >> AE.</b-navbar-brand
-    >
     <b-navbar-toggle
       target="nav-collapse"
       style="border-radius: 0;"
@@ -11,29 +8,11 @@
     <b-collapse id="nav-collapse" is-nav class="animate__animated animate__fadeInDown">
       <b-navbar-nav>
         <b-nav-item to="/">Home</b-nav-item>
-        <b-nav-item to="/about">About</b-nav-item>
+        <!-- <b-nav-item to="/about">About</b-nav-item>
         <b-nav-item to="/projects">Projects</b-nav-item>
-        <b-nav-item to="/articles">Articles</b-nav-item>
+        <b-nav-item to="/articles">Articles</b-nav-item> -->
         <b-nav-item to="/authors">Authors</b-nav-item>
-        <b-nav-item to="/contact">Contact Me</b-nav-item>
-        <b-nav-item
-          href="#"
-          v-if="themeMode == 'dark'"
-          @click="toggleDarkMode"
-          class="moon-icon"
-          title="Toggle Darkmode"
-        >
-          <SunnyIcon style="color: #eee;font-size: 20px;" />
-        </b-nav-item>
-        <b-nav-item
-          href="#"
-          v-else
-          @click="toggleDarkMode"
-          class="moon-icon"
-          title="Toggle Darkmode"
-        >
-          <MoonIcon style="color: #000;font-size: 20px;" />
-        </b-nav-item>
+        <!-- <b-nav-item to="/contact">Contact Me</b-nav-item> -->          
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>

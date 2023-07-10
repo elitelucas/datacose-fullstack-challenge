@@ -39,4 +39,4 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 ### Author
 
-Made with ❤ and ☕️ by [Asaolu Elijah](https://twitter.com/asaolu_elijah)
+Made with ❤ and ☕️ by [Lucas Wang](https://twitter.com/asaolu_elijah)

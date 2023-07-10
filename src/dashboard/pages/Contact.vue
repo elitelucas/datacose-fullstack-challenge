@@ -90,21 +90,21 @@ export default {
     }
   },
   head: {
-    title: "Contact 📧 - Asaolu Elijah",
+    title: "Contact 📧 - Lucas Wang",
     meta: [
       {
         hid: "description",
         name: "description",
-        content: "Do you have any enquires? Send a message now to Asaolu Elijah"
+        content: "Do you have any enquires? Send a message now to Lucas Wang"
       },
       {
         hid: "og:title",
         name: "og:title",
-        content: "Contact 📧 - Asaolu Elijah"
+        content: "Contact 📧 - Lucas Wang"
       },
       {
         property: "og:description",
-        content: "Do you have any enquires? Send a message now to Asaolu Elijah"
+        content: "Do you have any enquires? Send a message now to Lucas Wang"
       },
       {
         hid: "og:image",
