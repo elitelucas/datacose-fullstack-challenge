@@ -3,20 +3,29 @@
 The goal of this challenge if to create a Nuxt frontend with a FastAPI backend matching the objectives down below.
 
 ## Frontend
-```bash
-# install dependencies
-$ npm install
+### install dependencies
 
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
 ```
+npm install
+``` 
+
+### serve with hot reload at localhost:3000
+
+```
+npm run dev
+``` 
+
+### build for production and launch server
+
+```
+ npm run build
+ npm run start
+``` 
+### generate static project
+
+```
+npm run generate
+``` 
 
 ## Backend
 ### Install the requirements 
@@ -30,7 +39,7 @@ pip install -r requirements.txt
 python create_db.py 
 ```
 
-### Run the API
+### Run the API at localhost:8000
 ```
  python main.py 
 ``` 
