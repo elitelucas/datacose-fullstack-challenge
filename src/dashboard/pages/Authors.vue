@@ -1,9 +1,15 @@
 <template>
   <b-container class="page  animate__animated animate__fadeIn">
-    <h2>Authors: {{ authors.length }} {{ modal_name }}</h2>
-    <h2>Books: {{ books.length }}</h2>
+    <h2>Manage Authors</h2>
+    <p>Authors: {{ authors.length }}, Books: {{ books.length }}</p>
 
     <b-row>
+      <b-col lg="6" class="my-1">
+        <b-button v-b-modal.modal-1 id="createbutton" variant="success"
+          >Add Author</b-button
+        >
+      </b-col>
+
       <b-col lg="6" class="my-1">
         <b-form-group
           label="Filter"
@@ -28,12 +34,6 @@
             </b-input-group-append>
           </b-input-group>
         </b-form-group>
-      </b-col>
-
-      <b-col lg="6" class="my-1">
-        <b-button v-b-modal.modal-1 id="createbutton" variant="success"
-          >Add Author</b-button
-        >
       </b-col>
     </b-row>
 
