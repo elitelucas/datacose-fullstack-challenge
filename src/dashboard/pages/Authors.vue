@@ -15,11 +15,7 @@
         {{ books.filter(item => item.author_id == row.item.id).length }}
       </template>
       <template #cell(actions)="row">
-        <b-button
-          size="sm"
-          @click="info(row.item, row.index, $event.target)"
-          class="mr-1"
-        >
+        <b-button size="sm" @click="onClickDelete(row.item.id)" class="mr-1">
           Delete
         </b-button>
       </template>
@@ -81,7 +77,7 @@ export default {
   methods: {
     getAuthors(success, error) {
       axios
-        .get("http://localhost:8000/authors")      
+        .get("http://localhost:8000/authors")
         .then(res => {
           console.log("##########authors", res);
           res.data.forEach(item => {
@@ -129,6 +125,18 @@ export default {
     },
     onRowClicked(items) {
       console.log(items);
+    },
+    onClickDelete(author_id) {
+      axios
+        .post("http://localhost:8000/authors/del/"+author_id, {
+        })
+        .then(response => {
+          console.log(response.data);
+          window.location.reload();
+        })
+        .catch(error => {
+          console.log(error);
+        });
     }
   },
   async mounted() {

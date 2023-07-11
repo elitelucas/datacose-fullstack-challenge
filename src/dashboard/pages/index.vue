@@ -48,7 +48,7 @@ export default {
   },
 
   head: {
-    title: "Portfolio ⚡ - Lucas Wang",
+    title: "Datacose⚡ - Lucas Wang",
     meta: [
       {
         hid: "description",
@@ -59,7 +59,7 @@ export default {
       {
         hid: "og:title",
         name: "og:title",
-        content: "Portfolio ⚡ - Lucas Wang"
+        content: "Datacose ⚡ - Lucas Wang"
       },
       {
         property: "og:description",

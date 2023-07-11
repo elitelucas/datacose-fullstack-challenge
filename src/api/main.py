@@ -45,7 +45,7 @@ def get_all_items():
 @app.post('/authors',response_model=Author,
         status_code=status.HTTP_201_CREATED)
 def create_an_author(item:Author):
-    db_item=db.query(models.Item).filter(models.Author.name==item.name).first()
+    db_item=db.query(models.Author).filter(models.Author.name==item.name).first()
 
     if db_item is not None:
         raise HTTPException(status_code=400,detail="Author already exists")
