@@ -87,6 +87,22 @@
       </b-form-group>
       <b-button class="mt-3" @click="addAuthor()">Add</b-button>
     </b-modal>
+    <!-- detail modal -->
+    <b-modal id="modal-2" ref="modal-2" title="Author & Books" hide-footer>
+      <b-form-group id="input-group-1" label="Author Name">
+        <b-form-input
+          placeholder="John Doe"
+          required
+          v-model="modal2_name"
+        ></b-form-input>
+      </b-form-group>
+      <h5>Books</h5>
+      <li v-for="book in modal2_books">
+       {{book.title}}, {{book.pages}}P
+      </li>
+     
+      <!-- <b-button class="mt-3">Edit</b-button> -->
+    </b-modal>
   </b-container>
 </template>
 <script>
@@ -128,7 +144,10 @@ export default {
       currentPage: 1,
       perPage: 5,
       // add modal
-      modal_name: ""
+      modal_name: "",
+      //edit modal
+      modal2_name: "",
+      modal2_books: []
     };
   },
   head: {
@@ -184,8 +203,10 @@ export default {
           console.log(error);
         });
     },
-    onRowClicked(items) {
-      console.log(items);
+    onRowClicked(item) {
+      this.modal2_name = item.name;
+      this.modal2_books = this.books.filter(book => book.author_id == item.id);
+      this.$refs["modal-2"].show();
     },
     onFiltered(filteredItems) {
       // Trigger pagination to update the number of buttons/pages due to filtering
