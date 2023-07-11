@@ -20,6 +20,7 @@ class Book(BaseModel): #serializer
     id:int
     author_id:int  
     title:str  
+    pages:int  
 
     class Config:
         orm_mode=True    
@@ -87,7 +88,8 @@ def create_an_book(item:Book):
 
     new_item=models.Book(
         author_id=item.author_id,
-        title=item.title
+        title=item.title,
+        pages=item.pages
     )
 
     db.add(new_item)

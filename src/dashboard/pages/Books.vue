@@ -145,6 +145,12 @@ export default {
           sortable: true,
           class: "text-center"
         },
+        {
+          key: "pages",
+          label: "Number of Pages",
+          sortable: true,
+          sortDirection: "desc"
+        },
         { key: "actions", label: "Actions" }
       ],
       filter: null,
@@ -212,7 +218,7 @@ export default {
         })
         .then(response => {
           console.log(response.data);
-          // window.location.reload();
+          window.location.reload();
         })
         .catch(error => {
           console.log(error);

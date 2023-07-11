@@ -10,9 +10,10 @@ class Book(Base):
     id=Column(Integer,primary_key=True, autoincrement=True)
     author_id= Column(Integer)
     title=Column(String(255),nullable=False)
+    pages=Column(Integer)
 
     def __repr__(self):
-        return f"<Book name={self.name}>"
+        return f"<Book title={self.title}>"
 
 class Author(Base):
     __tablename__='authors'
