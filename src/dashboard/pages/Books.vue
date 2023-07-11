@@ -40,7 +40,7 @@
     <b-table
       striped
       hover
-      :items="authors"
+      :items="books"
       :fields="fields"
       :filter="filter"
       @filtered="onFiltered"
@@ -48,8 +48,14 @@
       :per-page="perPage"
       @row-clicked="onRowClicked"
     >
-      <template #cell(numbooks)="row">
-        {{ books.filter(item => item.author_id == row.item.id).length }}
+      <template #cell(author_name)="row">
+        {{
+          JSON.stringify(
+            authors.find(author => author.id == row.item.author_id)
+              ? authors.find(author => author.id == row.item.author_id).name
+              : ""
+          )
+        }}
       </template>
       <template #cell(actions)="row">
         <b-button
@@ -110,14 +116,14 @@ export default {
       ],
       fields: [
         {
-          key: "name",
-          label: "Author Name",
+          key: "title",
+          label: "Title",
           sortable: true,
           sortDirection: "desc"
         },
         {
-          key: "numbooks",
-          label: "Number of Books",
+          key: "author_name",
+          label: "Auhor Name",
           sortable: true,
           class: "text-center"
         },
@@ -132,7 +138,7 @@ export default {
     };
   },
   head: {
-    title: "Authors"
+    title: "Books"
   },
   methods: {
     getAuthors(success, error) {

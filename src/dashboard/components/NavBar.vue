@@ -12,6 +12,7 @@
         <b-nav-item to="/projects">Projects</b-nav-item>
         <b-nav-item to="/articles">Articles</b-nav-item> -->
         <b-nav-item to="/authors">Authors</b-nav-item>
+        <b-nav-item to="/books">Books</b-nav-item>
         <!-- <b-nav-item to="/contact">Contact Me</b-nav-item> -->          
       </b-navbar-nav>
     </b-collapse>
