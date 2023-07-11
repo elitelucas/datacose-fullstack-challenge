@@ -1,6 +1,6 @@
 # DataCose Full Stack Challenge
 
-The goal of this challenge if to create a Nuxt frontend with a FastAPI backend matching the objectives down below.
+The goal of this challenge if to create a Nuxt frontend with a FastAPI backend.
 
 ## Frontend
 ### install dependencies
